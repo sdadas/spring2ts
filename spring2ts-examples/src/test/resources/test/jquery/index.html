@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title></title>
+</head>
+<body>
+<script src="system.js"></script>
+<script src="lodash.core.min.js"></script>
+<script src="utils.js"></script>
+<script src="app.js"></script>
+<script>
+  System.registerDynamic('jquery', [], false, function(require, exports, module) { module.exports = window.$; });
+  System.import('app');
+</script>
+</body>
+</html>
