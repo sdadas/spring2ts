@@ -1,8 +1,8 @@
-## spring2ts
+# spring2ts
 
 **Generate TypeScript REST client directly from Spring MVC application source**
 
-#### Example
+### Example
 
 Add spring2ts-annotations dependency to your project.
 
@@ -97,9 +97,9 @@ export class HelloController {
 
 For more advanced examples, see `spring2ts-examples` module sources.
 
-#### Usage
+### Usage
 
-##### Using API directly from Java
+#### Using API directly from Java
 
 Add spring2ts-core dependency:
 
@@ -118,7 +118,7 @@ SourceGen generator = new SourceGen(sourceDir, outputDir);
 generator.run();
 ```
 
-##### Using spring2ts-maven-plugin
+#### Using spring2ts-maven-plugin
 
 Using this tool with maven:
 
