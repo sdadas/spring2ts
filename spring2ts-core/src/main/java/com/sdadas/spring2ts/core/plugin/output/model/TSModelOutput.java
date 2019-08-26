@@ -1,21 +1,17 @@
 package com.sdadas.spring2ts.core.plugin.output.model;
 
-import com.google.common.collect.Sets;
-import com.sdadas.spring2ts.core.typescript.types.CustomType;
-import com.sdadas.spring2ts.core.typescript.types.TypeName;
-import javafx.scene.shape.CubicCurveTo;
-import org.jboss.forge.roaster.model.JavaType;
-import org.jboss.forge.roaster.model.source.*;
 import com.sdadas.spring2ts.core.plugin.output.TSOutputProcessor;
-import com.sdadas.spring2ts.core.typescript.def.TSClassDef;
 import com.sdadas.spring2ts.core.typescript.def.TSEnumDef;
 import com.sdadas.spring2ts.core.typescript.def.TSInterfaceDef;
 import com.sdadas.spring2ts.core.typescript.def.TSModifier;
+import com.sdadas.spring2ts.core.typescript.types.CustomType;
+import com.sdadas.spring2ts.core.typescript.types.TypeName;
 import com.sdadas.spring2ts.core.typescript.writer.TSWritable;
+import org.jboss.forge.roaster.model.JavaType;
+import org.jboss.forge.roaster.model.source.*;
 
 import java.io.File;
 import java.util.List;
-import java.util.Set;
 
 /**
  * @author Sławomir Dadas
