@@ -40,7 +40,7 @@ public class ServiceMethod {
         Multimap<String, String> map = AnnotationUtils.getAnnotationAsMap(type, RequestMapping.class);
         if (map == null) {
             map = AnnotationUtils.getAnnotationAsMap(type, RestController.class);
-            if(map.isEmpty()){
+            if (map.isEmpty()) {
                 map.put("value", "");
             }
         }
