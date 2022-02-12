@@ -38,6 +38,12 @@ public class ServiceMethod {
 
     private ServiceRequestProps createProps(AnnotationTarget<?> type) {
         Multimap<String, String> map = AnnotationUtils.getAnnotationAsMap(type, RequestMapping.class);
+        if (map == null) {
+            map = AnnotationUtils.getAnnotationAsMap(type, RestController.class);
+            if(map.isEmpty()){
+                map.put("value", "");
+            }
+        }
         ServiceRequestProps props = new ServiceRequestProps(map);
         props.setResponseBody(AnnotationUtils.hasAny(type, ResponseBody.class, RestController.class));
         return props;
